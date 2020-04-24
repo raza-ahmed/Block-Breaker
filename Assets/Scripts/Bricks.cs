@@ -24,7 +24,13 @@ public class Bricks : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         timesHit++;
-        SimulateWin();
+        if (timesHit >= maxHit)
+        {
+            Destroy(gameObject);
+        }
+        else{
+            maxHit--;
+        }
        
     }
 
