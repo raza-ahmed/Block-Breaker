@@ -9,7 +9,7 @@ public class MusicPlayer : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log("Music Player is Awake" +GetInstanceID());
+       // Debug.Log("Music Player is Awake" +GetInstanceID());
         if (instance != null)
         {
             Destroy(gameObject);
@@ -24,7 +24,7 @@ public class MusicPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Music Player is Start" + GetInstanceID());
+     //   Debug.Log("Music Player is Start" + GetInstanceID());
         
     }
     
