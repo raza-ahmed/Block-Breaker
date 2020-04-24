@@ -14,4 +14,8 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Quit requested by User");
     }
+    public void LoadNextLevel()
+    {
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+    }
 }
