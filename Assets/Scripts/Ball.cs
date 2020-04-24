@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    public Paddle paddle;
+    private Paddle paddle;
     private bool hasStarted = false;
     private Vector3 paddleToBallVector;
     Rigidbody2D rigid2D;
@@ -12,6 +12,7 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        paddle = GameObject.FindObjectOfType<Paddle>();
         paddleToBallVector = this.transform.position - paddle.transform.position;
      //   print(paddleToBallVector);
         //Initialize rigid2D

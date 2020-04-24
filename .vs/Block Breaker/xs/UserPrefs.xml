@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{8EF7FD2A-EA24-02BA-E337-8605DF5645B6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Bricks.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MusicPlayer.cs">
     <Files>
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="15" Column="7" />
-      <File FileName="Assets/Scripts/Bricks.cs" Line="22" Column="5" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="15" Column="8" />
+      <File FileName="Assets/Scripts/Bricks.cs" Line="20" Column="6" />
+      <File FileName="Assets/Scripts/LoseCollider.cs" Line="7" Column="39" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="12" Column="25" />
+      <File FileName="Assets/Scripts/MusicPlayer.cs" Line="19" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +13,7 @@
           <Node name="Block Breaker" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Bricks.cs" selected="True" />
+                <Node name="MusicPlayer.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -21,7 +21,8 @@ public class Bricks : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        timesHit += 1;
+        timesHit++;
         print("On Collision Time Hit"+timesHit);
+       
     }
 }
