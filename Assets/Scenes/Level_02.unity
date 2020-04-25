@@ -409,6 +409,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1608051454}
     m_Modifications:
+    - target: {fileID: 4985543143720059825, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985543143720059825, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985543143720059825, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
+        type: 3}
+      propertyPath: Pan2D
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985543143720059825, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.105
+      objectReference: {fileID: 0}
     - target: {fileID: 2010225484439768756, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
         type: 3}
       propertyPath: m_Name
@@ -452,7 +472,7 @@ PrefabInstance:
     - target: {fileID: 2010225484439768751, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2010225484439768751, guid: 2c5c5f2a42aca45acaa7cba7476da20c,
         type: 3}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bricks : MonoBehaviour
 {
+    public AudioClip crack;
     public Sprite[] hitSprites;
     public static int breakableCount = 0;
 
@@ -33,7 +34,7 @@ public class Bricks : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-       
+        AudioSource.PlayClipAtPoint(crack, transform.position);
         if (isBreakable){
             HandleHits();
         }

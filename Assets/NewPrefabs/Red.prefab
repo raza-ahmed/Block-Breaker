@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf421d675fa746b184195fa10c79bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crack: {fileID: 8300000, guid: 4b85dff31afa7454a952d331097f6247, type: 3}
   hitSprites:
   - {fileID: -7145982233808653471, guid: 7533a9eac4ae54bd8b496f57a5871e3d, type: 3}
   - {fileID: 7189039015312481440, guid: 7533a9eac4ae54bd8b496f57a5871e3d, type: 3}

@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     private bool hasStarted = false;
     private Vector3 paddleToBallVector;
     Rigidbody2D rigid2D;
+    AudioSource audioData;
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +36,17 @@ public class Ball : MonoBehaviour
                // print(hasStarted);
             }
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 addedVelocity = new Vector2(Random.Range(0f, 0.2f), Random.Range(0f, 0.2f));
+
+        if (hasStarted) {
+            audioData = GetComponent<AudioSource>();
+            audioData.Play();
+            rigid2D.velocity += addedVelocity;
+        }
+        
     }
 }
