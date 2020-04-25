@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2010225484439768745}
   - component: {fileID: 3855413503161243241}
   m_Layer: 0
-  m_Name: 1 Hit
+  m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010225484439768756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.95, y: 8, z: 0}
+  m_LocalPosition: {x: 8, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,12 +71,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e500a3cf3b9f48a2a1c6e70aaf1a3c6, type: 3}
-  m_Color: {r: 0.1804913, g: 0.65231323, b: 0.9811321, a: 1}
+  m_Sprite: {fileID: 5832171855535021699, guid: 7533a9eac4ae54bd8b496f57a5871e3d,
+    type: 3}
+  m_Color: {r: 0.98039216, g: 0.28737974, b: 0.18039218, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 0.4}
+  m_Size: {x: 1, y: 0.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,7 +101,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 0.3125}
-    newSize: {x: 1.28, y: 0.4}
+    newSize: {x: 1, y: 0.3125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -120,3 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf421d675fa746b184195fa10c79bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSprites:
+  - {fileID: -7145982233808653471, guid: 7533a9eac4ae54bd8b496f57a5871e3d, type: 3}
+  - {fileID: 7189039015312481440, guid: 7533a9eac4ae54bd8b496f57a5871e3d, type: 3}

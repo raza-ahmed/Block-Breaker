@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Bricks : MonoBehaviour
 {
-    public int maxHit;
+    public Sprite[] hitSprites;
+
     private int timesHit;
-    private LevelManager levelManager;
+    private LevelManager levelManager; 
 
     // Start is called before the first frame update
     void Start()
@@ -24,14 +25,21 @@ public class Bricks : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         timesHit++;
+        int maxHit = hitSprites.Length + 1;
         if (timesHit >= maxHit)
         {
             Destroy(gameObject);
         }
         else{
-            maxHit--;
+            SpriteUpdate();
         }
        
+    }
+
+    void SpriteUpdate()
+    {
+        int spriteIndex = timesHit - 1;
+        this.GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
     void SimulateWin()
