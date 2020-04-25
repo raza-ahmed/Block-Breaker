@@ -7,7 +7,8 @@ public class LevelManager : MonoBehaviour
 {
     public void LoadLevel(string name)
     {
-       // Debug.Log("Load Level requested for:" + name);
+        // Debug.Log("Load Level requested for:" + name);
+        Bricks.breakableCount = 0;
         SceneManager.LoadScene(name);
     }
     public void QuitRequest()
@@ -16,7 +17,8 @@ public class LevelManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        Bricks.breakableCount = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
     public void BrickDestroyed()
     {

@@ -36,6 +36,9 @@ public class Paddle : MonoBehaviour
     }
     void AutoPlay()
     {
-
+        Vector3 paddlePos = new Vector3(0.5f, this.transform.position.y, 0f);
+        Vector3 ballPos = ball.transform.position;
+        paddlePos.x = Mathf.Clamp(ballPos.x, 0.5f, 15.5f);
+        this.transform.position = paddlePos;
     }
 }
